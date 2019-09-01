@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "371598025951",
+    "firebase_url": "https://tutorji-9259f.firebaseio.com",
+    "project_id": "tutorji-9259f",
+    "storage_bucket": "tutorji-9259f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371598025951:android:9ba918ede3f6ae76",
+        "android_client_info": {
+          "package_name": "com.whiskey.tutor_ji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371598025951-1deovqgje6mef5lsbu12l32not2ipban.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whiskey.tutor_ji",
+            "certificate_hash": "506fdac7ea154116bf7eec8cd8480ea8ccfdd9e1"
+          }
+        },
+        {
+          "client_id": "371598025951-aa3uebh0oha80san7fgntugk2t3d2lsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5FQRmitXZouMaYGhhBNWqxAFBcqPcqMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371598025951-aa3uebh0oha80san7fgntugk2t3d2lsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
