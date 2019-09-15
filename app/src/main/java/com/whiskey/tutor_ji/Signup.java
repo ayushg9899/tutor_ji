@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -35,14 +36,17 @@ public class Signup extends AppCompatActivity {
     EditText email;
     EditText password;
     Button signup;
-    String email_string;
+    String email_string,uid;
     String pass_string;
+    TextView login;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -52,8 +56,32 @@ public class Signup extends AppCompatActivity {
         email = findViewById(R.id.edit_email);
         password = findViewById(R.id.edit_password);
         signup = findViewById(R.id.signup_button);
-        mGooglesigninClient = GoogleSignIn.getClient(this, gso);
+        login = findViewById(R.id.login);
         mAuth = FirebaseAuth.getInstance();
+//        user=mAuth.getCurrentUser();
+//        uid=user.getUid();
+//
+//        ref= FirebaseDatabase.getInstance().getReference("learner");
+
+        mGooglesigninClient = GoogleSignIn.getClient(this, gso);
+
+//         if(user!=null){
+//
+//             ref.addValueEventListener(new ValueEventListener() {
+//                 @Override
+//                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//
+//                 }
+//
+//                 @Override
+//                 public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                 }
+//             });
+//
+//
+//         }
+
         signinbutton = (SignInButton) findViewById(R.id.googlesignin);
         signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,9 +98,18 @@ public class Signup extends AppCompatActivity {
             }
         });
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Signup.this,Login.class);
+                startActivity(i);
+            }
+        });
+
 
 
     }
+
 
     void create_account(){
 
@@ -93,6 +130,8 @@ public class Signup extends AppCompatActivity {
 //                            Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
 //                            updateUI(user);
+                            Intent i=new Intent(Signup.this,MainActivity.class);
+                            startActivity(i);
                         } else {
                             // If sign in fails, display a message to the user.
 //                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
@@ -146,6 +185,8 @@ public class Signup extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
 //                            Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Intent i=new Intent(Signup.this,MainActivity.class);
+                            startActivity(i);
 //                            updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.

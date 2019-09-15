@@ -10,10 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Learner_form"></activity>
+        <activity android:name=".Signup"></activity>
+        <activity android:name=".Learner_dashboard" />
+        <activity android:name=".Teacher_main" />
+        <activity android:name=".phone" />
+        <activity android:name=".Learner_form" />
+        <activity android:name=".Teacher_form" />
         <activity android:name=".Login" />
-        <activity android:name=".Signup" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +26,9 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <dist:module dist:instant="true" />
 
