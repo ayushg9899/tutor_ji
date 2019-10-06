@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tutorsearch"></activity>
+        <activity android:name=".QuestionActivity"></activity>
+        <activity android:name=".ShowRatingActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".teacherdetails" />
+        <activity android:name=".tutorsearch" />
         <activity android:name=".VerifyPhoneActivity" />
         <activity android:name=".Signup" />
         <activity android:name=".Learner_dashboard" />
@@ -27,6 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 

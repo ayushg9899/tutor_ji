@@ -49,7 +49,7 @@ public class splash extends AppCompatActivity {
                     }
                     else
                     {
-                        Intent i=new Intent(splash.this,Teacher_main.class);
+                        Intent i=new Intent(splash.this,tutorsearch.class);
                         startActivity(i);
                         Toast.makeText(splash.this, "teacher", Toast.LENGTH_SHORT).show();
                     }

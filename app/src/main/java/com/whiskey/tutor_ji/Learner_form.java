@@ -10,7 +10,6 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -209,7 +208,7 @@ public class Learner_form extends AppCompatActivity implements LocationListener,
                 if(flag==0) {
                     Toast.makeText(Learner_form.this, "Form uploaded successfully", Toast.LENGTH_SHORT).show();
                     ref.child(uid).setValue(hashMap);
-                    Intent i = new Intent(Learner_form.this, Learner_dashboard.class);
+                    Intent i = new Intent(Learner_form.this, tutorsearch.class);
                     startActivity(i);
                     finish();
                 }

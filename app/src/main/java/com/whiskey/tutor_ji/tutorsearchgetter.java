@@ -4,18 +4,48 @@ public class tutorsearchgetter {
 
     String name;
 
-    String email;
-    String school;
+    String subject;
 
-    String address_State;
+//    public float getAvg_rate() {
+//        return Float.parseFloat(avg_rate);
+//    }
+//
+//    public void setAvg_rate(String avg_rate) {
+//        this.avg_rate = avg_rate;
+//    }
 
-    public String getAddress_State() {
-        return address_State;
+//    String avg_rate;
+
+    public String getSubject() {
+        return subject;
     }
 
-    public void setAddress_State(String address_State) {
-        this.address_State = address_State;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
+
+    String mode;
+    String address_city;
+
+
+    public String getMode() {
+        return mode;
+    }
+
+    public void setMode(String mode) {
+        this.mode = mode;
+    }
+
+    public String getAddress_city() {
+        return address_city;
+    }
+
+    public void setAddress_city(String address_city) {
+        this.address_city = address_city;
+    }
+
+
+
 
     public String getName() {
         return name;
@@ -26,21 +56,9 @@ public class tutorsearchgetter {
     }
 
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
-    public String getSchool() {
-        return school;
-    }
 
-    public void setSchool(String school) {
-        this.school = school;
-    }
 
 
 }

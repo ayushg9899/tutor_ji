@@ -397,6 +397,7 @@ public class Teacher_form extends AppCompatActivity implements LocationListener,
                 hashMap.put("class", clas);
                 hashMap.put("category_key","teacher");
                 hashMap.put("email",email);
+                hashMap.put("avg_rate","0.0");
 
                if(mode[0]==true&&mode[1]==true)
                    hashMap.put("mode","both");
